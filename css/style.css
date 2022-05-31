@@ -12,15 +12,21 @@ a {
     text-decoration: none;
 }
 
+.dd_start,
+.dd_portfolio {
+    padding: 50px 0;
+}
+
+img {
+    width: 100%;
+}
+
 /* Start */
 
 .dd_bg_green {
     background-color: #1ABC9C;
 }
 
-.dd_start {
-    padding: 50px 0;
-}
 
 .dd_avatar {
     width:300px;
@@ -35,11 +41,12 @@ a {
 .dd_star_icon {
     font-size: 2.5rem;
 }
-.dd_star_container {
+.dd_star_container_white,
+.dd_star_container_black {
     position: relative;
 }
 
-.dd_star_container::after {
+.dd_star_container_white::after {
     content: '';
     display: inline-block;
     width: 100px;
@@ -51,7 +58,7 @@ a {
     left: 50px;
 }
 
-.dd_star_container::before {
+.dd_star_container_white::before {
     content: '';
     display: inline-block;
     width: 100px;
@@ -77,6 +84,43 @@ a {
     display: none;
 }
 
+/* Portfolio */
+
+.dd_portfolio_title {
+    font-weight: bold;
+}
+
+.dd_star_container_black::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #2C3E50;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.dd_star_container_black::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #2C3E50;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+
+/* About */
+
+
+
+
+
 
 @media all and (max-width: 991px) {
     
@@ -89,4 +133,17 @@ a {
     .dd_start_title {
         font-size: 4rem;
     }
+
+    .dd_portfolio_title {
+        font-size: 3rem;
+
+    }
+
+    .dd_star_container_white::after,
+    .dd_star_container_white::before,
+    .dd_star_container_black::after,
+    .dd_star_container_black::before {
+        width: 200px;
+    }
 }
+
