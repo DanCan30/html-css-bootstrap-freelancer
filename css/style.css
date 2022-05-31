@@ -12,7 +12,8 @@ a {
     text-decoration: none;
 }
 
-section {
+section,
+footer {
     padding: 50px 0;
 }
 
@@ -33,7 +34,6 @@ img {
 
 .dd_avatar {
     width:300px;
-    margin: 20px;
 }
 
 .dd_start_title {
@@ -172,6 +172,35 @@ img {
     right: 50px;
 }
 
+/* Footer */
+
+footer {
+    background-color: #3A546D;
+}
+
+.social {
+    color: white;
+    border: 1px solid white;
+    font-size: 1.5rem;
+}
+
+footer p,
+footer span {
+    font-size: 1.5rem;
+}
+
+.dd_start_link {
+    color: #1ABC9C;
+}
+
+.copyright {
+    background-color: #2C3E50;
+}
+
+
+
+
+
 
 @media all and (max-width: 991px) {
     
@@ -203,6 +232,10 @@ img {
     .dd_contact .dd_star_container_black::after,
     .dd_contact .dd_star_container_black::before {
         width: 100px;
+    }
+
+    footer h4 {
+        font-size: 1.7rem;
     }
 }
 
